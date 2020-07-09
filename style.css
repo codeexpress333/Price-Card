@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191b1d;
+    color: #fff;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .card {
+    min-height: 400px;
+    width: 300px;
+    background: #22262c;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .card h2 {
+    font-size: 35px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.container .card h3 {
+    font-size: 42px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.container .card h3 span {
+    font-size: 25px;
+}
+
+.container .card .lists li {
+    list-style: none;
+    font-size: 15px;
+    margin: 10px 30px;
+}
+
+.container .card .lists li span {
+    color: #bc1e4a;
+}
+
+.container .card .options select {
+    height: 30px;
+    width: 200px;
+    margin: 10px 50px;
+    background: #22262c;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #bc1e4a;
+}
+
+.container .card .options p {
+    font-size: 12px;
+    text-align: center;
+    color: #bc1e4a;
+}
+
+.container .card .btn,
+.container .card .btn2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #22262c;
+    border: 1px solid #bc1e4a;
+    border-radius: 5px;
+}
+
+.container .card .btn2 {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    background: #bc1e4a;
+}
+
+@media (max-width: 970px) {
+    .container .card {
+        margin: 20px;
+    }
+}
+
